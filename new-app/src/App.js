@@ -5,8 +5,8 @@ import Header from "./components/Header";
 export const UserContext = createContext();
 
 function App() {
-  const [user, setUser] = useState("");
-  const [userValue, setUserValue] = useState("");
+  const [user, setUser] = useState("اهلا وسهلا");
+  const [userValue, setUserValue] = useState("https://cdn.al-ain.com/lg/archive/news-image/pyramids-of-giza_408476.jpg");
 
 
 
@@ -27,7 +27,7 @@ function App() {
 
   return (
     <UserContext.Provider value={{ user: user, setUser: setUser , userValue: userValue, setUserValue: setUserValue}}>
-      <div>
+      <div className="button">
         
         <button onClick={updatArabic}>Arabic</button>
         <button onClick={updatEnglish}>English</button>

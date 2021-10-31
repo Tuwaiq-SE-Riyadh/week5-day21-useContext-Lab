@@ -3,7 +3,7 @@ import { UserContext } from "../App";
 
 function Body() {
   const userContext = useContext(UserContext)
-  return <div>
+  return <div className="image">
     <img src={userContext.userValue} alt="image city"></img>
   </div>;
 }
