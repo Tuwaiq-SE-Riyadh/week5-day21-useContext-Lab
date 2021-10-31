@@ -1,0 +1,6 @@
+.nav{
+  display: flex;
+  background-color: rgba(165, 42, 42, 0.267);
+  font-size: 30px;
+  gap: 10px;
+}
